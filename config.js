@@ -3,8 +3,8 @@ var config = {
     // debug 为 true 时，用于本地调试
     debug: true,
     get mini_assets() { return !this.debug; },
-    name: 'TSNodeclub',
-    description: 'Typescript NodeJS BBS',
+    name: 'TSNodeClub',
+    description: 'TypeScript Node.js BBS',
     keywords: 'nodejs, node, express, connect, socket.io',
     // 添加到 html head 中的信息
     site_headers: [],
