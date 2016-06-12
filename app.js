@@ -2,6 +2,7 @@
 const path = require('path');
 const express = require('express');
 const web_router_1 = require('./web-router');
+const bodyParser = require('body-parser');
 const auth_1 = require('./middlewares/auth');
 const _ = require('lodash');
 const config = require('./config');
@@ -22,6 +23,9 @@ class App {
         app.locals._layoutFile = 'layout.html';
         // public
         app.use('/public', express.static(staticDir));
+        // bodyParser
+        app.use(bodyParser.json({ limit: '1mb' }));
+        app.use(bodyParser.urlencoded({ extended: true, limit: '1mb' }));
         // auth
         var auth = new auth_1.Auth();
         app.use(auth.authUser);

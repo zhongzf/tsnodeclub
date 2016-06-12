@@ -10,6 +10,20 @@ export class TopicService {
     }
 
     getCountByQuery(query) {
-        return Topic.count(query);
+        return new Promise<number>(resolve => {            
+            Topic.count(query, (error, count) => {            
+                resolve(count);
+            })
+        });
     };
+
+    async newAndSave(title, content, tab, authorId?) {
+        var topic = new Topic();
+        topic.title = title;
+        topic.content = content;
+        topic.tab = tab;
+        topic.author_id = authorId;
+
+        await topic.save();
+    }
 }
