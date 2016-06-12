@@ -1,0 +1,15 @@
+{
+  "globalDependencies": {
+    "core-js": "registry:dt/core-js#0.0.0+20160602141332",
+    "express": "registry:dt/express#4.0.0+20160317120654",
+    "express-serve-static-core": "registry:dt/express-serve-static-core#0.0.0+20160602151406",
+    "express-session": "registry:dt/express-session#0.0.0+20160331200931",
+    "jasmine": "registry:dt/jasmine#2.2.0+20160505161446",
+    "log4js": "registry:dt/log4js#0.0.0+20160608042355",
+    "mime": "registry:dt/mime#0.0.0+20160316155526",
+    "mocha": "registry:dt/mocha#2.2.5+20160317120654",
+    "mongoose": "registry:dt/mongoose#3.8.5+20160605151347",
+    "node": "registry:dt/node#6.0.0+20160608110640",
+    "serve-static": "registry:dt/serve-static#0.0.0+20160606155157"
+  }
+}
