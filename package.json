@@ -1,6 +1,7 @@
 {
   "name": "tsnodeclub",
   "version": "1.0.0",
+  "description": "A NodeJS BBS written in TypeScript",
   "main": "app.js",
   "scripts": {
     "start": "tsc && node app.js"
